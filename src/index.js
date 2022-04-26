@@ -11,7 +11,9 @@ searching for nodes with given values
 
 2. What are the data inputs?
 
-nodes 
+nodes (we don't need to create any new nodes in these methods)
+
+integer for insertAtPosition 
 
 3. Can you restate the problem in your own words?
 
@@ -36,8 +38,12 @@ yes with Ankita
 
 10. Start with a simple example. Could you restate the problem? Could you restate it still differently? 
 
+see notes 
+
 11. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs? 
 
+what about nodes already in the linked list?
+stand-alone nodes?
 
 12. Progress to more complex examples. What is your updated plan here to find a solution?
 13. If you still cannot solve the proposed problem, try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the data inputs, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other? Did you use all the data? Did you use the whole of the data inputs? Have you taken into account all essential notions involved in the problem?
@@ -46,6 +52,7 @@ yes with Ankita
 Step Three (Solve). Carry out your plan of the solution and check each one of your steps in pseudocode.
 14.  Can you see clearly that the step is correct?
 
+see pseudocode below
 
 IV. 	Step Four (Check). Examine the solution obtained and refactor. 
 15.  Can you check your result? 
