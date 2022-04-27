@@ -89,5 +89,23 @@ class DoublyLinkedList {
     // create insertAfter first
   }
 
-  insertBefore(node, nodeToInsert) {}
+  insertBefore(node, nodeToInsert) {
+    // if the nodeToInsert is the head or the tail, return
+    if ((nodeToInsert = this.head && nodeToInsert = this.tail)) return;
+    // iterate till current.value equals nodeToInser
+    let current = head;
+    while (current.value !== nodeToInsert) {
+      current = current.next;
+    }
+    // iterate till currentNode.value equals node
+    let currentNode = head;
+    while (currentNode.value !== node) {
+      currentNode = currentNode.next;
+    }
+    // remove existing pointers
+    current.next = null;
+    current.prev = null;
+    // insert nodeToInsert prior to found currentNode
+    current = currentNode.prev;
+  }
 }
