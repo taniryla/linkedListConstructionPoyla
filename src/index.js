@@ -107,5 +107,12 @@ class DoublyLinkedList {
     // insert nodeToInsert prior to found currentNode
     current = currentNode.prev;
   }
-  remove()
+  remove(node) {
+    let current = head;
+    while (current.value !== node) {
+      current = current.next;
+    }
+    current.next = node.next;
+    node.prev = current;
+  }
 }
