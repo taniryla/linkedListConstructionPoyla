@@ -102,10 +102,10 @@ class DoublyLinkedList {
     while (currentNode.value !== node) {
       currentNode = currentNode.next;
     }
-    // remove existing pointers
-    current.next = null;
-    current.prev = null;
+    // remove existing pointers using remove method
+
     // insert nodeToInsert prior to found currentNode
     current = currentNode.prev;
   }
+  remove()
 }
