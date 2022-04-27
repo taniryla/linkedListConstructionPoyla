@@ -76,20 +76,14 @@ class DoublyLinkedList {
     this.tail = null;
   }
 
-  setHead(nodes) {
-    // set node4.prev to null and node4.next to nodeOne
-
-    let current = head;
-    let first = current;
-    let second = first.next;
-    let third = second.next;
-    let fourth = third.next;
-    let fifth = fourth.next;
-
-    while (current.next !== nodes) {
-      current.next = first;
-      current.prev = null;
+  setHead(node) {
+    // set node4.prev to null and node4.next to node
+    if (this.head === null) {
+      this.head = node;
+      this.tail;
     }
     // set node3.next to node5 and node5.prev to node3
   }
+
+  insertBefore(node, nodeToInsert) {}
 }
