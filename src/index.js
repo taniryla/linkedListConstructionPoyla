@@ -82,7 +82,11 @@ class DoublyLinkedList {
       this.head = node;
       this.tail;
     }
-    // set node3.next to node5 and node5.prev to node3
+    // set insertBefore first
+  }
+
+  setTail(node) {
+    // create insertAfter first
   }
 
   insertBefore(node, nodeToInsert) {}
